@@ -1,0 +1,75 @@
+﻿<Page x:Class="Tankstellen_Applikation.Pages.ShopPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tankstellen_Applikation.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShopPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Label Content="Shöp" FontSize="30"></Label>
+            <Button Grid.Row="1" Margin="5" Height="40" Content="Snickers" FontSize="20"></Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="5" Height="40" Content="Bounty" FontSize="20"></Button>
+            <Button Grid.Row="3" Grid.Column="3" Margin="5" Height="40" Content="Mars" FontSize="20"></Button>
+        </Grid>
+        <Grid Grid.Column="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Receipt" Grid.Column="1" FontSize="30"></Label>
+            <ListView Grid.Row="1" Name="lv_Receipt">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition  Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Content="{Binding Name}" Grid.Column="0"></Label>
+                            <Label Content="{Binding PriceInString}" Grid.Column="1"></Label>
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label FontSize="18" HorizontalContentAlignment="Right">TOTAL: 08.00 CHF</Label>
+            
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Height="75" Margin="5" Content="Pay" FontSize="40"></Button>
+        </Grid>
+        
+
+        
+        
+    </Grid>
+</Page>

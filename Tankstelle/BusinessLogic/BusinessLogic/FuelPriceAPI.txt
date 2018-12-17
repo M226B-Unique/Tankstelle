@@ -1,0 +1,8 @@
+﻿API-KEY:	2c09d493-55e2-b172-fcfe-2b87b5dfbc5f
+
+Tests mit dem eben erzeugten API-Key
+Zum Testen einfach die URLs im Browser öffnen.
+URL für Tankstellenliste:
+https://creativecommons.tankerkoenig.de/json/list.php?lat=52.52099975265203&lng=13.43803882598877&rad=4&sort=price&type=diesel&apikey=2c09d493-55e2-b172-fcfe-2b87b5dfbc5f
+URL für Details einer Tankstelle:
+https://creativecommons.tankerkoenig.de/json/detail.php?id=005056ba-7cb6-1ed2-bceb-90e59ad2cd35&apikey=2c09d493-55e2-b172-fcfe-2b87b5dfbc5f

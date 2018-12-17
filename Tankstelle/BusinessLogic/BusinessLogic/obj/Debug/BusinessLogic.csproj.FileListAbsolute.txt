@@ -1,0 +1,6 @@
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.pdb
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.pdb
