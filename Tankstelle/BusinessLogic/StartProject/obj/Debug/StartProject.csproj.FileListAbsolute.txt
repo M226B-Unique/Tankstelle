@@ -1,0 +1,12 @@
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\StartProject.exe.config
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\StartProject.exe
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\StartProject.pdb
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\BusinessLogic.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\FuelApi.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\BusinessLogic.pdb
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\bin\Debug\FuelApi.pdb
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\obj\Debug\StartProject.csprojAssemblyReference.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\obj\Debug\StartProject.csproj.CoreCompileInputs.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\obj\Debug\StartProject.csproj.CopyComplete
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\obj\Debug\StartProject.exe
+R:\TFS\M226B\Tankstelle\BusinessLogic\StartProject\obj\Debug\StartProject.pdb

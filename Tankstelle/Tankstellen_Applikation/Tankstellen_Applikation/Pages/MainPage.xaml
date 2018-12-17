@@ -1,0 +1,69 @@
+﻿<Page x:Class="Tankstellen_Applikation.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tankstellen_Applikation.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="500"
+      Title="MainPage">
+
+    <Grid Width="500" Height="450">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button Name="Säule_01_Einfahren" Grid.Row="2" Margin="5" Click="Säule_01_Einfahren_Click" IsEnabled="{Binding EinfahrenIsEnabled}">Einfahren</Button>
+
+        <Button Name="Säule_01_Ausfahren" Grid.Row="0" Margin="5" Click="Säule_01_Ausfahren_Click" IsEnabled="{Binding AusfahrenIsEnabled}">Ausfahren</Button>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="1">
+                <Image Source="../Pictures/Zapfsäule_cutten.jpg"/>
+                <Grid Margin="0, 0, 20, 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="130"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBox Margin="0, 20, 0, 10" IsEnabled="False" Width="120" TextAlignment="Right" Text="{Binding GetanktPreisAsString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox IsEnabled="False" Width="120" TextAlignment="Right" Text="{Binding FuelInLiterAsString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    </StackPanel>
+
+                    <Button Height="30" Width="100" Grid.Row="1" Name="Tanken_btn" Click="Tanken_btn_Click" IsEnabled="{Binding IsOccupied}">Tanken</Button>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Content="Benzin" Height="70" Width="45" Margin="3" Name="Benzin_btn" Click="Benzin_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
+                        <Button Content="Super B" Width="45" Margin="3" Name="Super_btn" Click="Super_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
+                        <Button Content="Diesel" Width="45" Margin="3" Name="Diesel_btn" Click="Diesel_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+                <!--über binding bild anpassen-->
+                <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+                <!--<Image />-->
+            </Border>            
+
+
+        </Grid>
+
+
+    </Grid>
+</Page>

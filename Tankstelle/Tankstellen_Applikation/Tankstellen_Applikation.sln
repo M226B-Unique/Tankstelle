@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tankstellen_Applikation", "Tankstellen_Applikation\Tankstellen_Applikation.csproj", "{92D836E0-69BA-4E0A-827D-596D0C5211B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic\BusinessLogic.csproj", "{6F2769A8-A8AD-4C38-B7A0-DA5AAEE1B3B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D836E0-69BA-4E0A-827D-596D0C5211B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D836E0-69BA-4E0A-827D-596D0C5211B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D836E0-69BA-4E0A-827D-596D0C5211B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D836E0-69BA-4E0A-827D-596D0C5211B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2769A8-A8AD-4C38-B7A0-DA5AAEE1B3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2769A8-A8AD-4C38-B7A0-DA5AAEE1B3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2769A8-A8AD-4C38-B7A0-DA5AAEE1B3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2769A8-A8AD-4C38-B7A0-DA5AAEE1B3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED9F2C09-16DF-4549-9EF1-34F87992EDC5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://eldar420.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tankstellen_Applikation\\Tankstellen_Applikation.csproj
+		SccProjectName1 = Tankstellen_Applikation
+		SccLocalPath1 = Tankstellen_Applikation
+		SccProjectUniqueName2 = ..\\BusinessLogic\\BusinessLogic\\BusinessLogic.csproj
+		SccProjectName2 = ../BusinessLogic/BusinessLogic
+		SccLocalPath2 = ..\\BusinessLogic\\BusinessLogic
+	EndGlobalSection
+EndGlobal

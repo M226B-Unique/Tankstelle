@@ -1,0 +1,6 @@
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\bin\Debug\FuelApi.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\bin\Debug\FuelApi.pdb
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\obj\Debug\FuelApi.csprojAssemblyReference.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\obj\Debug\FuelApi.csproj.CoreCompileInputs.cache
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\obj\Debug\FuelApi.dll
+R:\TFS\M226B\Tankstelle\BusinessLogic\FuelApi\obj\Debug\FuelApi.pdb
