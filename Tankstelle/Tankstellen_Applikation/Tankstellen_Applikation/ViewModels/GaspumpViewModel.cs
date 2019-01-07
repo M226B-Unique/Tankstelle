@@ -11,6 +11,7 @@ namespace Tankstellen_Applikation.ViewModels
     public class GaspumpViewModel : INotifyPropertyChanged
     {
         private const float priceForPetrol = 1.43f;
+        private MainViewModel mvmodel;
 
         private bool fuelTypeIsEnabled = true;
         public bool FuelTypeIsEnabled
