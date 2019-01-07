@@ -70,7 +70,6 @@
       <DependentUpon>ShopPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\GaspumpViewModel.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Windows\LoadscreenWindow.xaml.cs">
       <DependentUpon>LoadscreenWindow.xaml</DependentUpon>
     </Compile>
@@ -133,6 +132,9 @@
       <Project>{6f2769a8-a8ad-4c38-b7a0-da5aaee1b3b1}</Project>
       <Name>BusinessLogic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Connection\APIs\FuelPriceAPI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

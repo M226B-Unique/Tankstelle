@@ -41,7 +41,7 @@ namespace BusinessLogic
             petrol.FuelType = Fuel.Petrol;
             petrol.Number = 1;
             Tap superBenzin = new Tap();
-            superBenzin.FuelType = Fuel.Super_Petrol;
+            superBenzin.FuelType = Fuel.TruckDiesel;
             superBenzin.Number = 2; 
             Tap diesel = new Tap();
             diesel.FuelType = Fuel.Diesel;

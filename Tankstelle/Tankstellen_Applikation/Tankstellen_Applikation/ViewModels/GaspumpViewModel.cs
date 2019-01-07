@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,7 +12,6 @@ namespace Tankstellen_Applikation.ViewModels
     public class GaspumpViewModel : INotifyPropertyChanged
     {
         private const float priceForPetrol = 1.43f;
-        private MainViewModel mvmodel;
 
         private bool fuelTypeIsEnabled = true;
         public bool FuelTypeIsEnabled
@@ -41,6 +41,7 @@ namespace Tankstellen_Applikation.ViewModels
                 RaisePropertyChanged(nameof(FuelInLiters));
                 RaisePropertyChanged(nameof(FuelInLiterAsString));
                 RaisePropertyChanged(nameof(GetanktPreisAsString));
+                
             }
         }
 

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/zapfs%c3%a4ule_cutten.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("connection/apis/fuelpriceapi.txt")]
 
 

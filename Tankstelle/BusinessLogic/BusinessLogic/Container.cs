@@ -30,6 +30,11 @@ namespace BusinessLogic
             }
         }
 
+        public void RefreshCurrentFuelValue(double amountOfFuel)
+        {
+            CurrentFuelValue -= amountOfFuel;
+        }
+
         private void RaisePropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

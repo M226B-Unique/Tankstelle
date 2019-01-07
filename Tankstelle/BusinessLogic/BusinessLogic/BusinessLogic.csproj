@@ -51,11 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receipt.cs" />
     <Compile Include="ShopPurchase.cs" />
+    <Compile Include="Tankstelle.cs" />
     <Compile Include="Tap.cs" />
     <Compile Include="GasPump.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="FuelPriceAPI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
