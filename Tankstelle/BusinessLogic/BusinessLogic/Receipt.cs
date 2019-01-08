@@ -18,6 +18,8 @@ namespace BusinessLogic
 
         public float CurrentFuelPriceOfUsedFuelType { get; set; }       //API Kraftstoffkostenpreis
 
+        public List<Product> Products { get; set; } = new List<Product>();
+
         public float GetFuelPrice()
         {
             float fuelPrice = (FuelInLiter * EuroInFrancsPrice * CurrentFuelPriceOfUsedFuelType);

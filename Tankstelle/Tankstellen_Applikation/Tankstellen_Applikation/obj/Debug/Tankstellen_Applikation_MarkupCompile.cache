@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\App.xaml
-41653798481
+51789090306
 
-14780496255
+15670488068
 14667134484
-MainWindow.xaml;Pages\MainPage.xaml;Pages\ShopPage.xaml;Windows\LoadscreenWindow.xaml;
+MainWindow.xaml;Pages\MainPage.xaml;Pages\PayWindow.xaml;Pages\ShopPage.xaml;Windows\LoadscreenWindow.xaml;
 
 False
 

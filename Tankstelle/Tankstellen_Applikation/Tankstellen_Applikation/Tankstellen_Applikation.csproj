@@ -66,10 +66,14 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PayWindow.xaml.cs">
+      <DependentUpon>PayWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShopPage.xaml.cs">
       <DependentUpon>ShopPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\GaspumpViewModel.cs" />
+    <Compile Include="ViewModels\PayViewModel.cs" />
     <Compile Include="Windows\LoadscreenWindow.xaml.cs">
       <DependentUpon>LoadscreenWindow.xaml</DependentUpon>
     </Compile>
@@ -86,6 +90,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PayWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -135,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Connection\APIs\FuelPriceAPI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\Singletons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

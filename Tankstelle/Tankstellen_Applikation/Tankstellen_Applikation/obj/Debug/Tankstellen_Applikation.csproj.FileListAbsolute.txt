@@ -22,3 +22,5 @@ R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\bin\Debu
 R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\Tankstellen_Applikation.csproj.CopyComplete
 R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\Pages\ShopPage.g.cs
 R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\Pages\ShopPage.baml
+R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\Pages\PayWindow.g.cs
+R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\Pages\PayWindow.baml

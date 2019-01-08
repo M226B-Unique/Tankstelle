@@ -14,7 +14,7 @@
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid Margin="5">
@@ -28,10 +28,10 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
             </Grid.ColumnDefinitions>
-            <Label Content="Shöp" FontSize="30"></Label>
-            <Button Grid.Row="1" Margin="5" Height="40" Content="Snickers" FontSize="20"></Button>
-            <Button Grid.Row="2" Grid.Column="1" Margin="5" Height="40" Content="Bounty" FontSize="20"></Button>
-            <Button Grid.Row="3" Grid.Column="3" Margin="5" Height="40" Content="Mars" FontSize="20"></Button>
+            <Label Content="+" FontSize="30"></Label>
+            <Button Grid.Row="1" Margin="5" Height="40" Content="S" FontSize="20" Name="btn_buySnickers" Click="btn_buySnickers_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="5" Height="40" Content="B" FontSize="20" Name="btn_buyBounty" Click="btn_buyBounty_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="3" Margin="5" Height="40" Content="M" FontSize="20" Name="btn_buyMars" Click="btn_buyMars_Click"></Button>
         </Grid>
         <Grid Grid.Column="1" Margin="5">
             <Grid.RowDefinitions>
@@ -40,7 +40,7 @@
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
             <Label Content="Receipt" Grid.Column="1" FontSize="30"></Label>
-            <ListView Grid.Row="1" Name="lv_Receipt">
+            <ListView Grid.Row="1" Name="lv_Receipt" ItemsSource="{Binding Path=ProductDisplayList, UpdateSourceTrigger=PropertyChanged}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -49,8 +49,7 @@
                                 <ColumnDefinition  Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
-                            <Label Content="{Binding Name}" Grid.Column="0"></Label>
-                            <Label Content="{Binding PriceInString}" Grid.Column="1"></Label>
+                            <Label Content="{Binding}" Grid.Column="0"></Label>
 
                         </Grid>
                     </DataTemplate>
@@ -63,9 +62,9 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label FontSize="18" HorizontalContentAlignment="Right">TOTAL: 08.00 CHF</Label>
+            <Label FontSize="18" HorizontalContentAlignment="Right" Content="{Binding ProductDisplayPrice}"></Label>
             
-            <Button Grid.Row="2" Grid.ColumnSpan="2" Height="75" Margin="5" Content="Pay" FontSize="40"></Button>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Height="75" Margin="5" Content="Pay" FontSize="40" Name="btn_pay" Click="btn_pay_Click"></Button>
         </Grid>
         
 
