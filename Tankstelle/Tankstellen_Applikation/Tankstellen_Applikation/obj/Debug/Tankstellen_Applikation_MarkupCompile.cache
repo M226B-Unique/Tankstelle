@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\obj\Debug\
 Tankstellen_Applikation
 none
 false
 DEBUG;TRACE
-R:\TFS\M226B\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\App.xaml
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\Tankstellen_Applikation\Tankstellen_Applikation\App.xaml
 41653798481
 
 14780496255
-14667134484
+14687690526
 MainWindow.xaml;Pages\MainPage.xaml;Pages\ShopPage.xaml;Windows\LoadscreenWindow.xaml;
 
 False

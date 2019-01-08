@@ -40,16 +40,16 @@ namespace BusinessLogic
             Tap petrol = new Tap();
             petrol.FuelType = Fuel.Petrol;
             petrol.Number = 1;
-            Tap superBenzin = new Tap();
-            superBenzin.FuelType = Fuel.Super_Petrol;
-            superBenzin.Number = 2; 
             Tap diesel = new Tap();
             diesel.FuelType = Fuel.Diesel;
-            diesel.Number = 3;
+            diesel.Number = 2; 
+            Tap truckD = new Tap();
+            truckD.FuelType = Fuel.TruckDiesel;
+            truckD.Number = 3;
 
             Taps.Add(petrol);
-            Taps.Add(superBenzin);
             Taps.Add(diesel);
+            Taps.Add(truckD);
             Occupied = false;
             IsFueling = true;
         }

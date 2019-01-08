@@ -4,3 +4,8 @@ R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.cspr
 R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
 R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.dll
 R:\TFS\M226B\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\gibz\Documents\SChool\M226B\Tankstelle\Tankstelle\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.pdb

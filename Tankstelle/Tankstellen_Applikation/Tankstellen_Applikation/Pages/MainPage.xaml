@@ -39,18 +39,17 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel VerticalAlignment="Center">
-                        <TextBox Margin="0, 20, 0, 10" IsEnabled="False" Width="120" TextAlignment="Right" Text="{Binding GetanktPreisAsString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox Margin="0, 20, 0, 10" IsEnabled="False" Width="120" TextAlignment="Right" Text="{Binding TankedPriceAsString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         <TextBox IsEnabled="False" Width="120" TextAlignment="Right" Text="{Binding FuelInLiterAsString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </StackPanel>
 
-                    <Button Height="30" Width="100" Grid.Row="1" Name="Tanken_btn" Click="Tanken_btn_Click" IsEnabled="{Binding IsOccupied}">Tanken</Button>
+                    <Button Height="30" Width="100" Grid.Row="1" Name="Tanken_btn" Click="Tanken_btn_Click" IsEnabled="{Binding TankIsEnabled}">Tanken</Button>
 
                     <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Content="Benzin" Height="70" Width="45" Margin="3" Name="Benzin_btn" Click="Benzin_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
-                        <Button Content="Super B" Width="45" Margin="3" Name="Super_btn" Click="Super_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
-                        <Button Content="Diesel" Width="45" Margin="3" Name="Diesel_btn" Click="Diesel_btn_Click" IsEnabled="{Binding FuelTypeIsEnabled}"></Button>
+                        <Button Content="Petrol" Height="70" Width="45" Margin="3" Name="Petrol_btn" Click="Petrol_btn_Click" IsEnabled="{Binding PetrolIsEnabled}"></Button>
+                        <Button Content="Diesel" Width="45" Margin="3" Name="Diesel_btn" Click="Diesel_btn_Click" IsEnabled="{Binding DieselIsEnabled}"></Button>
+                        <Button Content="Truck D" Width="45" Margin="3" Name="TruckD_btn" Click="TruckD_btn_Click" IsEnabled="{Binding TruckdieselIsEnabled}"></Button>
                     </StackPanel>
-
                 </Grid>
 
             </Grid>

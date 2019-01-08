@@ -9,7 +9,7 @@ namespace BusinessLogic
     public enum Fuel
     {
         Petrol,
-        Super_Petrol,
-        Diesel
+        Diesel,
+        TruckDiesel
     }
 }

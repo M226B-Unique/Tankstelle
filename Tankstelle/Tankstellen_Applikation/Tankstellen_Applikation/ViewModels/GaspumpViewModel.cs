@@ -5,30 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using BusinessLogic;
 
 namespace Tankstellen_Applikation.ViewModels
 {
     public class GaspumpViewModel : INotifyPropertyChanged
     {
         private const float priceForPetrol = 1.43f;
-        private MainViewModel mvmodel;
-
-        private bool fuelTypeIsEnabled = true;
-        public bool FuelTypeIsEnabled
-        {
-            get
-            {
-                return fuelTypeIsEnabled;
-            }
-            set
-            {
-                fuelTypeIsEnabled = value;
-                RaisePropertyChanged(nameof(FuelTypeIsEnabled));
-            }
-        }
 
         private double fuelInLiters;
-
         public double FuelInLiters
         {
             get
@@ -40,7 +25,21 @@ namespace Tankstellen_Applikation.ViewModels
                 fuelInLiters = value;
                 RaisePropertyChanged(nameof(FuelInLiters));
                 RaisePropertyChanged(nameof(FuelInLiterAsString));
-                RaisePropertyChanged(nameof(GetanktPreisAsString));
+            }
+        }
+
+        private double fuelPrice;
+        public double FuelPrice
+        {
+            get
+            {
+                return fuelPrice;
+            }
+            set
+            {
+                fuelPrice = value;
+                RaisePropertyChanged(nameof(FuelPrice));
+                RaisePropertyChanged(nameof(TankedPriceAsString));
             }
         }
 
@@ -77,14 +76,7 @@ namespace Tankstellen_Applikation.ViewModels
         {
             get
             {
-                if (IsFueling == true)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                return ausfahrenIsEnabled;
             }
             set
             {
@@ -107,23 +99,21 @@ namespace Tankstellen_Applikation.ViewModels
             }
         }
 
-        private string getanktPreisAsString;
-
-        public string GetanktPreisAsString
+        private string tankedPriceAsString;
+        public string TankedPriceAsString
         {
             get
             {
-                return (string.Format("{0:#.00}", (FuelInLiters * priceForPetrol)) + " CHF");
+                return (string.Format("{0:#.00}", (FuelPrice)) + " CHF");
             }
             set
             {
-                getanktPreisAsString = value;
-                RaisePropertyChanged(nameof(GetanktPreisAsString));
+                tankedPriceAsString = value;
+                RaisePropertyChanged(nameof(TankedPriceAsString));
             }
         }
 
         private bool isFueling = false;
-
         public bool IsFueling
         {
             get
@@ -138,6 +128,89 @@ namespace Tankstellen_Applikation.ViewModels
             }
         }
 
+        private bool petrolIsEnabled = false;
+        public bool PetrolIsEnabled
+        {
+            get
+            {
+                return petrolIsEnabled;
+            }
+            set
+            {
+                petrolIsEnabled = value;
+                RaisePropertyChanged(nameof(PetrolIsEnabled));
+            }
+        }
+
+        private bool dieselIsEnabled = false;
+        public bool DieselIsEnabled
+        {
+            get
+            {
+                return dieselIsEnabled;
+            }
+            set
+            {
+                dieselIsEnabled = value;
+                RaisePropertyChanged(nameof(DieselIsEnabled));
+            }
+        }
+
+        private bool truckDieselIsEnabled = false;
+        public bool TruckdieselIsEnabled
+        {
+            get
+            {
+                return truckDieselIsEnabled;
+            }
+            set
+            {
+                truckDieselIsEnabled = value;
+                RaisePropertyChanged(nameof(TruckdieselIsEnabled));
+            }
+        }
+
+        private Fuel fuelType;
+        public Fuel FuelType
+        {
+            get
+            {
+                return fuelType;
+            }
+            set
+            {
+                fuelType = value;
+                RaisePropertyChanged(nameof(FuelType));
+            }
+        }
+
+        private bool tankIsEnabled = false;
+        public bool TankIsEnabled
+        {
+            get
+            {
+                return tankIsEnabled;
+            }
+            set
+            {
+                tankIsEnabled = value;
+                RaisePropertyChanged(nameof(TankIsEnabled));
+            }
+        }
+
+        private bool oneTapIsOccupied = false;
+        public bool OneTapIsOccupied
+        {
+            get
+            {
+                return oneTapIsOccupied;
+            }
+            set
+            {
+                oneTapIsOccupied = value;
+            }
+        }
+
         public void StartFuelingInBackground()
         {
             Task.Run(() => StartFueling());
@@ -147,14 +220,43 @@ namespace Tankstellen_Applikation.ViewModels
         {
             while (IsFueling == true)
             {
-                FuelInLiters += 0.02;
-                Thread.Sleep(50);
+                if (FuelType == Fuel.Petrol)
+                {
+                    FuelInLiters += 0.2;
+                    FuelPrice += 0.3;
+                    Thread.Sleep(50);
+                }
+                if (FuelType == Fuel.Diesel)
+                {
+                    FuelInLiters += 0.2;
+                    FuelPrice += 0.3;
+                    Thread.Sleep(50);
+                }
+                if (FuelType == Fuel.TruckDiesel)
+                {
+                    FuelInLiters += 0.2;
+                    FuelPrice += 0.3;
+                    Thread.Sleep(50);
+                }
             }
         }
 
         public void SetToZero()
         {
             FuelInLiters = 0;
+            FuelPrice = 0;
+        }
+
+        public void ClearGasPump()
+        {
+            SetToZero();
+            AusfahrenIsEnabled = false;
+            DieselIsEnabled = false;
+            EinfahrenIsEnabled = true;
+            PetrolIsEnabled = false;
+            TankIsEnabled = false;
+            TruckdieselIsEnabled = false;
+            IsOccupied = false;
         }
 
 
